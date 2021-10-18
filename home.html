@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+#newsHolder{
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+    margin-top: 2%;
+    background-color: rgba(228, 228, 228, 0.986);
+}
+#newsHolder>figure>img{
+    width:200px;
+}
+#newsHolder>h3{
+    width:50%;
+}
+#news{
+    margin-right: 10%;
+    margin-left: 10%;
+    background-color: rgb(14, 13, 13);
+}
+#search{
+    width: 400px;
+    
+}
+#align{
+    justify-content: center;
+    display: flex;
+}
+#align>img{
+    width: 60px;
+}
+</style>
+
+
+<body>
+    <div id="align">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHcAAAB3CAMAAAAO5y+4AAAAclBMVEW5AAX///+4AAC1AACyAAC7Hh7hq6z04eG6ERL9+vrFUlO5DA3qxsbFWlvCR0j25ue4FhbisbHqzMzv1NX78fHMaGnnvr7ShIXOcHDCRETHWFjETU3KYWHkt7jdoaHVjIy/ODjQeXm8Kival5e6IyS7LzBw4sqZAAAFE0lEQVRoge2Y25aiOhCGoYqDiN0wEgVPIKjv/4q7qhIQEFt6dM3FXvlvgJjwmaQOKRzHysrKysrKysrKysrKysrq3wum9Kwdnvf/Ldaf0BWm2/0YIJ1q/z12kbgT8hxPTbXvAddT7Yffzhji8Al3qj1aAq6m+n//JVedtqTsgTtqH3BXQRCcwve4aw9JcF2PuJm0Y3oac1UlPyA0wVtchMPXEsHLRlxq3y8BvNWQmzWI8aYudoR+j0vXiCj1mOtxuw/LATe5ApRseFFY3d7jOnw9w2aC67o1+ANugdBtc/L2fF2FmD9w6b3qjEWfG8Ztv3ftmeZblVUDOzXmIrWf8ar63C1i9ikusHFCFY25jrTXA26JfvIx7v54PJDXJGN7Xkq7fjTcABfhp7gxA1WDy4n95fdee1xa/dPH9leu7QqO7JlmKPHacKMzNNGn5ivXIzRqiluDF9257h9afmOBYaHem2+wWp2OgPVonZHbN6DXv4tXOYJfr7IsWIL3FtcD9DwyKzONe3zW7d5NDbhuGSPq2L17h5vddqxiO/Yj3b456fZePkrKw/l23hUr9c7+jjUv/6rOuD7InTyHfDDvX4JH/aEwVU60B2eAfKr/7dcnO8Ap0Q+T7fBkwF8cKK3+lxpWF93TdL3y7AXgDAbN4aaLhdN1hHixSOVmMRRIx0XbsfdyHqJ/AExvx7rYN4vXZg0HlSRh3PbDkh739ITrpK/Qg0VI16VZjJ7LYJAkKme/cgITYpLt7hVYn0tP3Uv+0NMXPYyiY2TiVq37SW2k7wG5J5VFuIl+EbfMebjAn7kUL7F0Od/KIMnNJ30fc3ymY/TehGqdx17VZ4ZLAx+50SXvRPVozSvoySBhJLJIck+nMuA/mh14A67Vei7XXemVHnK/B2GRM28k5oQXGSNWIctQUhUj/0qbM+LXeQ6XNybHR+5yMFhOmPybY4on2WBJS98AheDbt750JeGWXApIJvmRywVfxTOnw3uU6A2GlG4iqv55FwJ8QnnGPbYrPeQeBp8tZErCou5JRSc5aoezHirbHJ1x7icO4QYen4JrHHP35hPG1RcLOtMGK09v76mhjvz1g//MBWUNaMT2ywecg9ZcXLDNpDDyI9VqpTef2+ilvL01nx5rM4CNyJw/3Wh9aWZkYcOVsnPlPfPftbiPmG4BkCpe0S2XZQAZBxUxjbrrTu40y67IHgRY4BNudnfbQEpyiptUgIaprL0OIHQuKbtPP+UrcMvVdjnkRlVh9KUN65rIh45S3hvLAvNfydtsRGfocq2jZfXCtFuuIyu99UZxY5jYJCx7HKg3IPE693jpuyzlcMhIc5618n+e8J2rpxo891/icnF/8CMJq+zOazYxHTt7aHYt90VG6rgOm4sb/hA3qMuOnabQdsYelHBtMo4WwCZHhd1MrnZF9SOXz/arQAdV4O9GlVi4nmfXWbjjsc+5jvk2NbW/cE9XKjHZ1VvLN5xIp6XvHExvlMq8mc8VE+1z800nvV3wJR1Cp5eVtG/Te0IOGIQ98pqtXwStPrd1/am8b7bCFy8xGf+75zE6n0ZhFmo/enXQGXBl6aa5JsXpYszYjP7iYFZi2e/9YBlT3OjO1bl9r7lRT25pNjin7srsHXlSRJHLDN2d2milgjllkp+mPcdPSd1NT3F7qk7v3cHpPZB9x82mulRFE8+qzuad2/sHZ3CmHuRRvq3ZmtDKysrKysrKysrKysrK6h/rPzINUb3uLgrgAAAAAElFTkSuQmCC">
+    <input type="text" id="search"><button onclick="search()">Search</button>
+
+</div>
+    <div id="news">
+    </div>
+   
+</body>
+
+
+<script src="home.js"></script>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #cont{
+        display: flex;
+        flex-direction: row;
+        width: 1000px;
+        margin: auto;
+        margin-top: 5%;
+        background-color: rgb(233, 231, 231);
+        border:0.5px solid rgb(194, 194, 194);
+        padding: 20px;
+        border-radius: 10px;
+    }
+    #first{
+        width: 40%;
+    }
+    img{
+        width: 100%;
+    }
+    #head{
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+    }
+    #author{
+        text-align: right;
+    }
+    #author{
+        font-style: italic;
+    }
+    #pub{
+        margin-top: 50px;
+        text-align: right;
+    }
+</style>
+<body>
+    
+    <div id="cont">
+        
+        <figure id="first">
+            <div id="source"></div>
+            <img id="img">
+        </figure>
+        <div id="head">
+            <h3 id="heading"> </h3>
+            <p id="para"></p>
+            <div id="author"></div>
+            <div id="pub"></div>
+        </div>
+
+    </div>
+</body>
+<script src=news.js></script>
+
+</html>
